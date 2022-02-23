@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="main">
+  <header>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar</p>
+  </header>
+  <form action="#" id="survey-form">
+    <label id="name-label">Nombre</label>
+    <input type="text" name="nombre" id="name" placeholder="Introduce tu nombre" required>
+    <label for="email" class="label" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Introduce tu mail" required>
+    <label for="edad" id="number-label">Edad</label>
+    <input type="number" name="edad" id="number" min="18" max="100" placeholder="Introduce tu edad">
+    <select name="optinon" id="dropdown">
+      <option value="#">Selecciona</option>
+      <option value="#">Estudiante</option>
+      <option value="#">Trabajo tiempo completo</option>
+      <option value="#">Prefiero no decir</option>
+      <option value="#">Other</option>
+    </select>
+    <label for="recomendacion">Recomendarias freecodeamp a tus amigos</label>
+    <input type="radio" name="recomendacion" value="Definitivamente">
+    <input type="radio" name="recomendacion" value="Tal vez">
+    <input type="radio" name="recomendacion" value="No estoy seguro">
+    <p>What would you like to see improved?</p>
+    <label>
+      <input type="checkbox" value="frontend-Proyects">
+      Frontend
+    </label>
+    <label>
+      <input type="checkbox" value="backend-Proyects">
+      Backend
+    </label>
+    <label>Comentarios</label>
+    <textarea name="comentarios" id="text_area" cols="30" rows="10"></textarea>
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</body>
+</html>
